@@ -1,4 +1,4 @@
-let util = require('util');
+var util = require('util');
 
 function Animal(name) {
     this.name = name;
@@ -18,7 +18,7 @@ Cat.prototype.sound = function () {
 
 util.inherits(Cat, Animal);
 
-let murka = new Cat ("Мурка");
+var murka = new Cat ("Мурка");
 
-murka.walk()
-murka.sound()
+murka.walk();
+murka.sound();

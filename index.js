@@ -1,6 +1,6 @@
-let util = require('util');
+var util = require('util');
 
-let obj = {
+var obj = {
     a: 5,
     b: "Test",
     test: function () {
@@ -11,5 +11,6 @@ let obj = {
 console.log(util.inspect(obj));
 console.log(obj);
 
-let str = util.format( "My %s %d %j", "JJJJJ", 123, {jjj:"123"});
+var str = util.format( "My %s %d %j", "JJJJJ", 123, {jjj:"123"});
+
 console.log(str);
